@@ -22,8 +22,8 @@ class Calculator:
     def power(self, x, y):
         self.result = x * y
 
-    def square(self, x):
-        self.result = math.sqrt(x)
+    def find_square(self, num):
+        self.result = math.sqrt(num)
 
 calc = Calculator()
 
