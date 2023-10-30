@@ -2,7 +2,7 @@ import math
 
 class Calculator:
     def __init__(self):
-        self.result = 0
+        self.result = None
 
     def add(self, x, y):
         self.result = x + y
@@ -14,11 +14,11 @@ class Calculator:
         self.result = x * y
 
     def divide(self, x, y):
-        if y != 0:
-            self.result = x / y
+        if y == 0:
+            print("Error! Division by zero is not allowed.")
         else:
-            print("Cannot divide by zero!")
-    
+            self.result = x / y
+
     def power(self, x, y):
         self.result = x ** y
 
@@ -28,7 +28,10 @@ class Calculator:
     def square_root(self, x):
         self.result = math.sqrt(x)
 
+    def sin(self, x):
+        self.result = math.sin(x)
 
+# Rest of your code remains the same with the addition of sin operation
 
 calc = Calculator()
 
@@ -40,7 +43,8 @@ options = {
     "5": "Power",
     "6": "Root",
     "7": "Square Root",
-    "8": "Exit"
+    "8": "Sin",
+    "9": "Exit"
 }
 
 while True:
@@ -50,11 +54,11 @@ while True:
 
     choice = input("Enter your choice: ")
 
-    if choice == "8":
+    if choice == "9":
         print("Calculator closed.")
         break
 
-    if choice in ("1", "2", "3", "4", "5", "6", "7"):
+    if choice in ("1", "2", "3", "4", "5", "6", "7", "8"):
         if choice == "1":
             x = float(input("Enter first number: "))
             y = float(input("Enter second number: "))
@@ -89,6 +93,11 @@ while True:
             x = float(input("Enter number: "))
             calc.square_root(x)
 
-        print("Result:", calc.result)
+        elif choice == "8":
+            x = float(input("Enter the angle (in radians): "))
+            calc.sin(x)
+
+        if calc.result is not None:
+            print("Result:", calc.result)
     else:
         print("Invalid choice. Please select a valid option.")
