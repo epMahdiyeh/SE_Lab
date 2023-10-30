@@ -9,9 +9,15 @@ class Calculator:
 
     def subtract(self, x, y):
         self.result = x - y
-        
+
     def multiply(self, x, y):
         self.result = x * y
+
+    def divide(self, x, y):
+        if y != 0:
+            self.result = x / y
+        else:
+            print("Cannot divide by zero!")
 
 
 
