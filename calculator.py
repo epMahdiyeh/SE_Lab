@@ -22,8 +22,8 @@ class Calculator:
     def power(self, x, y):
         self.result = x ** y
 
-    def root(self, x, y):
-        self.result = x ** (1 / y)
+    def root(self, a, b):
+        self.result = a ** (1 / b)
 
     def square_root(self, x):
         self.result = math.sqrt(x)
