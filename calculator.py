@@ -22,6 +22,9 @@ class Calculator:
     def power(self, x, y):
         self.result = x * y
 
+    def square(self, x):
+        self.result = math.sqrt(x)
+
 calc = Calculator()
 
 options = {
@@ -79,7 +82,7 @@ while True:
 
         elif choice == "7":
             x = float(input("Enter number: "))
-            calc.square_root(x)
+            calc.square(x)
 
         print("Result:", calc.result)
     else:
