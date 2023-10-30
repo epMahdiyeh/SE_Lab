@@ -9,6 +9,9 @@ class Calculator:
 
     def subtract(self, x, y):
         self.result = x - y
+        
+    def multiply(self, x, y):
+        self.result = x * y
 
 
 
