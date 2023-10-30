@@ -63,3 +63,7 @@ while True:
         elif choice == "7":
             x = float(input("Enter number: "))
             calc.square_root(x)
+
+        print("Result:", calc.result)
+    else:
+        print("Invalid choice. Please select a valid option.")
