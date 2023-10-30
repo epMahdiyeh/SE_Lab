@@ -19,11 +19,7 @@ class Calculator:
         else:
             print("Cannot divide by zero!")
 
-    def power(self, x, y):
-        self.result = x ** y
 
-    def square(self, num):
-        self.result = math.sqrt(num)
 
 calc = Calculator()
 
@@ -82,7 +78,7 @@ while True:
 
         elif choice == "7":
             x = float(input("Enter number: "))
-            calc.square(x)
+            calc.square_root(x)
 
         print("Result:", calc.result)
     else:
