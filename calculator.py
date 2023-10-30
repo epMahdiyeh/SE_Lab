@@ -20,9 +20,9 @@ class Calculator:
             print("Cannot divide by zero!")
 
     def power(self, x, y):
-        self.result = x * y
+        self.result = x ** y
 
-    def find_square(self, num):
+    def square(self, num):
         self.result = math.sqrt(num)
 
 calc = Calculator()
