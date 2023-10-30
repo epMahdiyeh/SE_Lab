@@ -7,6 +7,10 @@ class Calculator:
     def add(self, x, y):
         self.result = x + y
 
+    def subtract(self, x, y):
+        self.result = x - y
+
+
 
 calc = Calculator()
 
