@@ -2,17 +2,10 @@ import math
 
 class Calculator:
     def __init__(self):
-<<<<<<< HEAD
         self.result = 0
-=======
-        self.result = None
->>>>>>> e4d431adc5645d5079ba647c5a4b2f2e15962050
 
     def add(self, x, y):
         self.result = x + y
-
-    def subtract(self, x, y):
-        self.result = x - y
 
 
 calc = Calculator()
@@ -25,8 +18,7 @@ options = {
     "5": "Power",
     "6": "Root",
     "7": "Square Root",
-    "8": "Sin",
-    "9": "Exit"
+    "8": "Exit"
 }
 
 while True:
@@ -36,11 +28,11 @@ while True:
 
     choice = input("Enter your choice: ")
 
-    if choice == "9":
+    if choice == "8":
         print("Calculator closed.")
         break
 
-    if choice in ("1", "2", "3", "4", "5", "6", "7", "8"):
+    if choice in ("1", "2", "3", "4", "5", "6", "7"):
         if choice == "1":
             x = float(input("Enter first number: "))
             y = float(input("Enter second number: "))
@@ -75,11 +67,6 @@ while True:
             x = float(input("Enter number: "))
             calc.square_root(x)
 
-        elif choice == "8":
-            x = float(input("Enter the angle (in radians): "))
-            calc.sin(x)
-
-        if calc.result is not None:
-            print("Result:", calc.result)
+        print("Result:", calc.result)
     else:
         print("Invalid choice. Please select a valid option.")
