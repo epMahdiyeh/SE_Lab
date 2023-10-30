@@ -22,6 +22,9 @@ class Calculator:
     def power(self, x, y):
         self.result = x ** y
 
+    def root(self, x, y):
+        self.result = x ** (1 / y)
+
 
 
 calc = Calculator()
