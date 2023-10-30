@@ -44,3 +44,8 @@ while True:
             x = float(input("Enter first number: "))
             y = float(input("Enter second number: "))
             calc.multiply(x, y)
+
+        elif choice == "4":
+            x = float(input("Enter dividend: "))
+            y = float(input("Enter divisor: "))
+            calc.divide(x, y)
