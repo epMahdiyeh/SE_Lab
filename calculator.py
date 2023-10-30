@@ -1,4 +1,11 @@
-#functions
+import math
+
+class Calculator:
+    #TO DO
+    pass
+
+
+calc = Calculator()
 
 options = {
     "1": "Add",
@@ -21,3 +28,9 @@ while True:
     if choice == "8":
         print("Calculator closed.")
         break
+
+    if choice in ("1", "2", "3", "4", "5", "6", "7"):
+        if choice == "1":
+            x = float(input("Enter first number: "))
+            y = float(input("Enter second number: "))
+            calc.add(x, y)
