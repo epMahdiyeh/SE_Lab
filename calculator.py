@@ -49,3 +49,8 @@ while True:
             x = float(input("Enter dividend: "))
             y = float(input("Enter divisor: "))
             calc.divide(x, y)
+
+        elif choice == "5":
+            x = float(input("Enter base number: "))
+            y = float(input("Enter exponent: "))
+            calc.power(x, y)
