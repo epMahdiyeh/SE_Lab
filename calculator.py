@@ -10,3 +10,10 @@ options = {
     "7": "Square Root",
     "8": "Exit"
 }
+
+while True:
+    print("\nSelect an operation:")
+    for key, value in options.items():
+        print(f"{key}: {value}")
+
+    choice = input("Enter your choice: ")
