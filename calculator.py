@@ -1,8 +1,11 @@
 import math
 
 class Calculator:
-    #TO DO
-    pass
+    def __init__(self):
+        self.result = 0
+        
+    def add(self, x, y):
+        self.result = x + y
 
 
 calc = Calculator()
