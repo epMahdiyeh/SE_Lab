@@ -19,7 +19,8 @@ class Calculator:
         else:
             print("Cannot divide by zero!")
 
-
+    def power(self, x, y):
+        self.result = x * y
 
 calc = Calculator()
 
