@@ -25,6 +25,9 @@ class Calculator:
     def root(self, x, y):
         self.result = x ** (1 / y)
 
+    def square_root(self, x):
+        self.result = math.sqrt(x)
+
 
 
 calc = Calculator()
