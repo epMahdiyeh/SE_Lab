@@ -54,3 +54,8 @@ while True:
             x = float(input("Enter base number: "))
             y = float(input("Enter exponent: "))
             calc.power(x, y)
+
+        elif choice == "6":
+            x = float(input("Enter number: "))
+            y = float(input("Enter root degree: "))
+            calc.root(x, y)
