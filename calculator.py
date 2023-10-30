@@ -39,3 +39,8 @@ while True:
             x = float(input("Enter first number: "))
             y = float(input("Enter second number: "))
             calc.subtract(x, y)
+
+        elif choice == "3":
+            x = float(input("Enter first number: "))
+            y = float(input("Enter second number: "))
+            calc.multiply(x, y)
