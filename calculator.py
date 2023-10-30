@@ -59,3 +59,7 @@ while True:
             x = float(input("Enter number: "))
             y = float(input("Enter root degree: "))
             calc.root(x, y)
+
+        elif choice == "7":
+            x = float(input("Enter number: "))
+            calc.square_root(x)
