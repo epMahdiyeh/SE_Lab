@@ -17,3 +17,7 @@ while True:
         print(f"{key}: {value}")
 
     choice = input("Enter your choice: ")
+
+    if choice == "8":
+        print("Calculator closed.")
+        break
